@@ -1,0 +1,26 @@
+--cpu=Cortex-M4.fp
+"rizprojet\startup_stm32f401xc.o"
+"rizprojet\stm32f4xx_hal_gpio.o"
+"rizprojet\stm32f4xx_hal_flash_ex.o"
+"rizprojet\stm32f4xx_hal.o"
+"rizprojet\stm32f4xx_hal_tim.o"
+"rizprojet\stm32f4xx_hal_dma_ex.o"
+"rizprojet\stm32f4xx_hal_rcc.o"
+"rizprojet\stm32f4xx_hal_dma.o"
+"rizprojet\stm32f4xx_hal_pwr.o"
+"rizprojet\stm32f4xx_hal_cortex.o"
+"rizprojet\stm32f4xx_hal_pwr_ex.o"
+"rizprojet\stm32f4xx_hal_rcc_ex.o"
+"rizprojet\stm32f4xx_hal_flash_ramfunc.o"
+"rizprojet\stm32f4xx_hal_tim_ex.o"
+"rizprojet\stm32f4xx_hal_flash.o"
+"rizprojet\stm32f4xx_hal_uart.o"
+"rizprojet\stm32f4xx_hal_msp.o"
+"rizprojet\main.o"
+"rizprojet\stm32f4xx_it.o"
+"rizprojet\liquidcrystal.o"
+"rizprojet\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "rizprojet\rizprojet.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "rizprojet.map" -o rizprojet\rizprojet.axf
